@@ -45,7 +45,7 @@ First, we need a migration to set up the database:
 # db/migrate/2019_create_birds.rb
 
 class CreateBirds < ActiveRecord::Migration[5.2]
-  def change
+  def change 
     create_table :birds do |t|
       t.string :name
       t.string :species
